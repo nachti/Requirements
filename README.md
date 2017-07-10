@@ -5,6 +5,10 @@ Pleae install the following softare:
  brew tap homebrew/science
  brew install r
  ```
+ * (recommended but not mandatory) RStudio https://www.rstudio.com on ma mac installlation via brew is possible by executing
+ ```
+ brew cask install rstudio
+ ```
 and these packages:
  * data.table
  * dplyr
