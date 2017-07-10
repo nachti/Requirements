@@ -2,7 +2,7 @@
 Pleae install the following softare:
  * current R installation i.e. `3.4.0`. Install from https://cran.r-project.org/mirrors.html if on a mac installation via homebrew is possible by executing:
  ```
- brew tap homebrew/scienc
+ brew tap homebrew/science
  brew install r
  ```
 and these packages:
