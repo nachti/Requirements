@@ -1,5 +1,15 @@
 # Requirements
-Please install the following packages:
+Pleae install the following softare:
+ * current R installation i.e. `3.4.0`. Install from https://cran.r-project.org/mirrors.html if on a mac installation via homebrew is possible by executing:
+ ```
+ brew tap homebrew/science
+ brew install r
+ ```
+ * (recommended but not mandatory) RStudio https://www.rstudio.com on ma mac installlation via brew is possible by executing
+ ```
+ brew cask install rstudio
+ ```
+and these packages:
  * data.table
  * dplyr
  * devtools
@@ -16,7 +26,9 @@ Please install the following packages:
 ```r
 Rcpp::evalCpp("2+2")
 ```
+ * sparklyR
+ 
 This line installs all the packages:
 ```r
-install.packages(c("data.table","dplyr","devtools","roxygen2","tidyverse","shiny","xml2","rvest","robustbase","mvoutlier","Rcpp"))
+install.packages(c("data.table","dplyr","devtools","roxygen2","tidyverse","shiny","xml2","rvest","robustbase","mvoutlier","Rcpp", "sparklyr"))
 ```
