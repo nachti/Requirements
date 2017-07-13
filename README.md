@@ -12,6 +12,7 @@ Pleae install the following softare:
 and these packages:
  * data.table
  * dplyr
+ * dbplyr
  * devtools
  * roxygen2
  * tidyverse
@@ -26,9 +27,27 @@ and these packages:
 ```r
 Rcpp::evalCpp("2+2")
 ```
+ * replyr
  * sparklyR
+ 
+ Additionally, some packages with data sets are required:
+ 
  
 This line installs all the packages:
 ```r
-install.packages(c("data.table","dplyr","devtools","roxygen2","tidyverse","shiny","xml2","rvest","robustbase","mvoutlier","Rcpp", "sparklyr"))
+install.packages(c("data.table","dplyr","dbplyr","devtools","roxygen2","tidyverse","shiny","xml2","rvest","robustbase","mvoutlier","Rcpp", "replyr"))
+devtools::install_github("rstudio/sparklyr",lib="")
+
+# some data to analyze later on
+install.packages(c("nycflights13", "Lahman"))
+```
+
+## Preparations for the talks / labs
+### R for HPC and big dat
+On the first run you also must download spark. First check for available versions 
+```spark_available_versions()```
+Then, download the latest version of spark. Currently, this is `2.1.1`:
+```
+library(sparklyr)
+spark_install(version = "2.1.1", hadoop_version = "2.7")
 ```
