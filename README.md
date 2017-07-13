@@ -48,5 +48,6 @@ On the first run you also must download spark. First check for available version
 ```spark_available_versions()```
 Then, download the latest version of spark. Currently, this is `2.1.1`:
 ```
+library(sparklyr)
 spark_install(version = "2.1.1", hadoop_version = "2.7")
 ```
