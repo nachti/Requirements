@@ -26,9 +26,17 @@ and these packages:
 ```r
 Rcpp::evalCpp("2+2")
 ```
+ * replyr
  * sparklyR
+ 
+ Additionally, some packages with data sets are required:
+ 
  
 This line installs all the packages:
 ```r
-install.packages(c("data.table","dplyr","devtools","roxygen2","tidyverse","shiny","xml2","rvest","robustbase","mvoutlier","Rcpp", "sparklyr"))
+install.packages(c("data.table","dplyr","devtools","roxygen2","tidyverse","shiny","xml2","rvest","robustbase","mvoutlier","Rcpp", "replyr"))
+devtools::install_github("rstudio/sparklyr",lib="")
+
+# some data to analyze later on
+install.packages(c("nycflights13", "Lahman"))
 ```
