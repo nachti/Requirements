@@ -43,7 +43,9 @@ install.packages(c("nycflights13", "Lahman"))
 ```
 
 ## Preparations for the talks / labs
-### R for HPC and big dat
+### R for HPC and big data
+Java8 i.e. JRE8 or JDK8 should be installed.
+
 On the first run you also must download spark. First check for available versions 
 ```spark_available_versions()```
 Then, download the latest version of spark. Currently, this is `2.1.1`:
