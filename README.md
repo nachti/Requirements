@@ -5,7 +5,7 @@ Pleae install the following softare:
  brew tap homebrew/science
  brew install r
  ```
- * (recommended but not mandatory) RStudio https://www.rstudio.com on ma mac installlation via brew is possible by executing
+ * RStudio https://www.rstudio.com on ma mac installlation via brew is possible by executing
  ```
  brew cask install rstudio
  ```
@@ -29,13 +29,16 @@ Rcpp::evalCpp("2+2")
 ```
  * replyr
  * sparklyR
+ * rmarkdown
+ * xtable
+ * stargazer
  
  Additionally, some packages with data sets are required:
  
  
 This line installs all the packages:
 ```r
-install.packages(c("data.table","dplyr","dbplyr","devtools","roxygen2","tidyverse","shiny","xml2","rvest","robustbase","mvoutlier","Rcpp", "replyr"))
+install.packages(c("data.table","dplyr","dbplyr","devtools","roxygen2","tidyverse","shiny","xml2","rvest","robustbase","mvoutlier","Rcpp", "replyr", "rmarkdown", "xtable", "stargazer"))
 devtools::install_github("rstudio/sparklyr",lib="")
 
 # some data to analyze later on
