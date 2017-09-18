@@ -51,7 +51,7 @@ Java8 i.e. JRE8 or JDK8 should be installed.
 
 On the first run you also must download spark. First check for available versions 
 ```spark_available_versions()```
-Then, download the latest version of spark. Currently, this is `2.1.1`:
+Then, download the latest version of spark. Currently, this is `2.2.0`:
 ```
 library(sparklyr)
 spark_install(version = "2.2.0", hadoop_version = "2.7")
