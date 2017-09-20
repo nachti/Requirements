@@ -28,7 +28,7 @@ and these packages:
 Rcpp::evalCpp("2+2")
 ```
  * replyr
- * sparklyR
+ * sparklyr
  * rmarkdown
  * xtable
  * stargazer
