@@ -45,6 +45,31 @@ devtools::install_github("rstudio/sparklyr",lib="")
 install.packages(c("nycflights13", "Lahman"))
 ```
 
+## Tools for R-Package development
+
+Please follow the instructions here:
+https://support.rstudio.com/hc/en-us/articles/200486498-Package-Development-Prerequisites
+
+Windows users should install Rtools and a LaTeX distribution.
+
+Links:
+https://cran.r-project.org/bin/windows/Rtools/
+
+https://cran.r-project.org/bin/windows/Rtools/Rtools.txt
+
+http://thecoatlessprofessor.com/programming/rcpp/install-rtools-for-rcpp/
+
+There are some issues with Windows 10:
+
+https://stackoverflow.com/questions/45309492/unable-to-install-rtools-and-configure-the-path-correctly
+
+https://github.com/hadley/devtools/issues/885
+
+```r
+Sys.which("gcc.exe")
+```
+should return a path an not an empty string if the (gcc) installation is ok.
+
 ## Preparations for the talks / labs
 ### R for HPC and big data
 Java8 i.e. JRE8 or JDK8 should be installed.
